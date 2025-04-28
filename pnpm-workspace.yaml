@@ -1,0 +1,4 @@
+packages:
+  - 'vite-remote'
+  - 'vue-cli-host'
+  - 'rspack-remote' 

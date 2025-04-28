@@ -1,12 +1,18 @@
 {
   "name": "test-mod-fed-runtime",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
+    "dev": "pnpm --filter \"*\" run dev",
+    "build": "pnpm --filter \"*\" run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  }
 }
