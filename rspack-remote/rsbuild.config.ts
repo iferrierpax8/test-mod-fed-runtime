@@ -20,6 +20,7 @@ export default defineConfig({
       },
       remotes: {
         vue_cli_remote: 'vue_cli_remote@http://localhost:2002/remoteEntry.js',
+        vite_remote: 'vite_remote@http://localhost:2001/mf-manifest.json',
       }
     }),
   ],

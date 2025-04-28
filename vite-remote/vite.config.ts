@@ -27,6 +27,7 @@ export default defineConfig({
       manifest: true,
       exposes: {
         './ViteMFE': './src/main.ts',
+        './HorizontalVite': './src/components/HorizontalVite.vue',
       },
       remotes: {
         vue_cli_remote: 'vue_cli_remote@http://localhost:2002/remoteEntry.js',
