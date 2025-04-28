@@ -1,9 +1,14 @@
 <template>
   <div class="content">
-    <h1>Rsbuild with Vue</h1>
-    <p>Start building amazing things with Rsbuild.</p>
+    <h1>Hello Rspack Remote</h1>
+    <p>This is a basic Hello World component from Rspack Remote</p>
+    <HorizontalVueCli />
   </div>
 </template>
+
+<script setup lang="ts">
+import HorizontalVueCli from 'vue_cli_remote/HorizontalVueCli'
+</script>
 
 <style scoped>
 .content {
@@ -13,6 +18,8 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid blue;
+  margin: 20px;
 }
 
 .content h1 {

@@ -1,13 +1,16 @@
 <template>
   <div class="hello">
-    <h1>Hello Host Vue CLI</h1>
-    <p>This is a basic Hello World component from Vue CLI Host</p>
+    <h1>Hello Remote Vue CLI</h1>
+    <p>This is a basic Hello World component from Vue CLI Remote</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  props: {
+    msg: String
+  }
 }
 </script>
 

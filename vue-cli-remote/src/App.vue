@@ -1,25 +1,26 @@
 <template>
   <HelloWorld />
-  <Horizontal />
 </template>
 
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
-import { mfes } from './main'
-import { defineAsyncComponent } from 'vue'
 
-const Horizontal = defineAsyncComponent(() => mfes.vue_cli_remote_horizontal)
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+}
 </script>
 
 <style>
-#app {
+#vue-cli-remote {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   margin: 20px;
-  border: 1px solid red;
+  border: 1px solid yellow;
 }
 </style>

@@ -28,6 +28,9 @@ export default defineConfig({
       exposes: {
         './ViteMFE': './src/main.ts',
       },
+      remotes: {
+        vue_cli_remote: 'vue_cli_remote@http://localhost:2002/remoteEntry.js',
+      }
     }),
   ],
   resolve: {

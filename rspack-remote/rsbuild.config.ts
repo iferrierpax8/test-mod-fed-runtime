@@ -18,6 +18,9 @@ export default defineConfig({
       exposes: {
         './RspackMFE': './src/index.ts',
       },
+      remotes: {
+        vue_cli_remote: 'vue_cli_remote@http://localhost:2002/remoteEntry.js',
+      }
     }),
   ],
 });
