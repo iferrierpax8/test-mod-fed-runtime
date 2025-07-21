@@ -1,10 +1,13 @@
 <template>
-  <div style="display: flex; flex-direction: row; gap: 20px;">
-    <HelloWorld />
-    <Horizontal />
-    <div id="rspack-remote"></div>
-    <div id="vite-remote"></div>
-    <div id="vue-cli-remote"></div>
+  <div>
+    <img src="./assets/florida.jpeg" alt="Florida Things" />
+    <div style="display: flex; flex-direction: row; gap: 20px;">
+      <HelloWorld />
+      <Horizontal />
+      <div id="rspack-remote"></div>
+      <div id="vite-remote"></div>
+      <div id="vue-cli-remote"></div>
+    </div>
   </div>
 </template>
 

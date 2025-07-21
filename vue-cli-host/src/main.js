@@ -1,8 +1,8 @@
-import { init, loadRemote } from '@module-federation/enhanced/runtime';
+import { createInstance } from '@module-federation/enhanced/runtime';
 import { createApp } from 'vue'
 import App from './App.vue'
 
-init({
+const mf = createInstance({
   name: 'vue-cli-host',
   remotes: [
     {
@@ -24,10 +24,10 @@ init({
 });
 
 export const mfes = {
-  vite_remote: loadRemote("vite_remote/ViteMFE").then((md) => md),
-  rspack_remote: loadRemote("rspack_remote/RspackMFE").then((md) => md),
-  vue_cli_remote: loadRemote("vue_cli_remote/VueCliMFE").then((md) => md),
-  vue_cli_remote_horizontal: loadRemote("vue_cli_remote/HorizontalVueCli").then((md) => md),
+  vite_remote: mf.loadRemote("vite_remote/ViteMFE").then((md) => md),
+  rspack_remote: mf.loadRemote("rspack_remote/RspackMFE").then((md) => md),
+  vue_cli_remote: mf.loadRemote("vue_cli_remote/VueCliMFE").then((md) => md),
+  vue_cli_remote_horizontal: mf.loadRemote("vue_cli_remote/HorizontalVueCli").then((md) => md),
 }
 
 createApp(App).mount('#app')
