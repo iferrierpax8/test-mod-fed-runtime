@@ -4,6 +4,7 @@
     <div style="display: flex; flex-direction: row; gap: 20px;">
       <HelloWorld />
       <Horizontal />
+      <HorizontalVueCli />
       <div id="rspack-remote"></div>
       <div id="vite-remote"></div>
       <div id="vue-cli-remote"></div>
@@ -13,10 +14,13 @@
 
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import { mfes } from './main'
+// import { mfes } from './main'
 import { defineAsyncComponent } from 'vue'
 
-const Horizontal = defineAsyncComponent(() => mfes.vue_cli_remote_horizontal)
+const Horizontal = defineAsyncComponent(() => import('rspack_remote/RspackHorizontalMFE'))
+const HorizontalVueCli = defineAsyncComponent(() => import('vue_cli_remote/HorizontalVueCli'))
+console.log('HorizontalVueCli host', HorizontalVueCli )
+// const Horizontal = defineAsyncComponent(() => mfes.vue_cli_remote_horizontal)
 </script>
 
 <style>

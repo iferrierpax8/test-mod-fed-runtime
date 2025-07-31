@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
+import path from 'path'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -31,7 +32,13 @@ export default defineConfig({
       },
       remotes: {
         vue_cli_remote: 'vue_cli_remote@http://localhost:2002/remoteEntry.js',
-      }
+      },
+      shared: {
+        vue: {
+          singleton: true,
+        },
+      },
+      runtimePlugins: [path.resolve(__dirname, './custom-runtime-plugin.ts')],
     }),
   ],
   resolve: {

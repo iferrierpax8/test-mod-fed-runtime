@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.17.0",
+    "@pax8/mfe-core": "^1.9.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
@@ -31,7 +32,8 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
     },
     "rules": {}
   },

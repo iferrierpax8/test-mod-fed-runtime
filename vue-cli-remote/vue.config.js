@@ -40,6 +40,11 @@ module.exports = defineConfig({
           './VueCliMFE': './src/main.js',
           './HorizontalVueCli': './src/components/HorizontalVueCli.vue',
         },
+        shared: {
+          vue: {
+            singleton: true,
+          },
+        },
       }),
     ],
   },

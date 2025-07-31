@@ -5,19 +5,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
 
-export default {
-  name: 'HorizontalVueCli',
-  setup() {
-    const message = ref('Hello Horizontal Vue CLI MFE!')
-    
-    return {
-      message
-    }
-  }
-}
+const message = ref('Hello Horizontal Vue CLI MFE!')
 </script>
 
 <style scoped>
