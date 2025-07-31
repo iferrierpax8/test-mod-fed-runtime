@@ -3,13 +3,11 @@
     <h1>Hello Rspack Remote</h1>
     <p>This is a basic Hello World component from Rspack Remote</p>
     <HorizontalVueCli />
-    <HorizontalVite />
   </div>
 </template>
 
 <script setup lang="ts">
-import HorizontalVueCli from 'vue_cli_remote/HorizontalVueCli'
-import HorizontalVite from 'vite_remote/HorizontalVite'
+
 </script>
 
 <style scoped>
